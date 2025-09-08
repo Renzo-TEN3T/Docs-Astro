@@ -1,24 +1,38 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
+	
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Power BI Docs',
 			sidebar: [
 				{
-					label: 'Guides',
+					label: '🏠 Inicio',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Bienvenida', link: '/' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '🚀 Introducción',
+					items: [
+						{ label: '¿Qué es Power BI?', link: '/introduccion/que-es-power-bi/' },
+						{ label: 'Instalación', link: '/introduccion/instalacion/' },
+					],
+				},
+				{
+					label: '📊 Dashboards',
+					items: [
+						{ label: 'Mi primer dashboard', link: '/dashboards/crear-dashboard/' },
+						{ label: 'Visualizaciones', link: '/dashboards/visualizaciones/' },
+					],
+				},
+				{
+					label: '🧮 Fórmulas DAX',
+					items: [
+						{ label: 'DAX básico', link: '/formulas/dax-basico/' },
+						{ label: 'Funciones tiempo', link: '/formulas/time-intelligence/' },
+					],
 				},
 			],
 		}),

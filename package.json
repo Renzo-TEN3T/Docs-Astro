@@ -1,0 +1,14 @@
+{
+  "name": "aliv-web",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && python -m http.server 8000 -d dist",
+    "api": "node server/index.mjs"
+  },
+  "devDependencies": {
+    "lucide-static": "0.469.0"
+  }
+}

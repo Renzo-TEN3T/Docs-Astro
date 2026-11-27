@@ -1,0 +1,14 @@
+node_modules/
+dist/
+
+# Puente web -> SQL Server: vive y se despliega aparte, no es parte de este sitio estatico,
+# y server/.env tiene credenciales reales de la base de datos.
+server/
+
+# Version anterior al rewrite a src/*.mjs + build.mjs; se queda en disco por si hace falta
+# consultarla, pero no debe publicarse.
+_backup_v1/
+/index.html
+/app.js
+/style.css
+/img/
